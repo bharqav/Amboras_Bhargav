@@ -1,0 +1,13 @@
+{
+  "name": "amboras",
+  "private": true,
+  "description": "Run backend + frontend locally, then verify API matches dashboard expectations.",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm run start:dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "verify:api": "npm run test:dashboard-api --prefix frontend",
+    "verify": "npm run verify:api && npm run test:dashboard-refresh --prefix frontend && npm run test:funnel --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

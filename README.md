@@ -2,6 +2,9 @@
 
 A full-stack take-home implementation for Amboras using NestJS (backend), Next.js (frontend), and PostgreSQL, aligned with the Store Analytics PRD and featuring a professional, high-density dashboard UI.
 
+YOUTUBE LINK :- https://youtu.be/JnMJ283uwI0
+
+
 ## Setup Instructions
 
 ### 1) Clone and install
